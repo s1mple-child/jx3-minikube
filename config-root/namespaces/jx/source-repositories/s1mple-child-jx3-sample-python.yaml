@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: s1mple-child
+    provider: github
+    repository: jx3-sample-python
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: s1mple-child-jx3-sample-python
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/s1mple-child/jx3-sample-python.git
+  org: s1mple-child
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jx3-sample-python
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/s1mple-child/jx3-sample-python
