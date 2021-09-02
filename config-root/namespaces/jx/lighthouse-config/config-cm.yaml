@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         s1mple-child/jx3-minikube: true
+        s1mple-child/jx3-sample-python: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,6 +21,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         s1mple-child/jx3-minikube: merge
+        s1mple-child/jx3-sample-python: merge
       queries:
       - labels:
         - approved
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - s1mple-child/jx3-minikube
+        - s1mple-child/jx3-sample-python
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - s1mple-child/jx3-minikube
+        - s1mple-child/jx3-sample-python
       target_url: http://lighthouse-jx.192.168.49.2.nip.io/merge/status
 kind: ConfigMap
 metadata:
